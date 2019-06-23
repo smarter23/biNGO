@@ -21,7 +21,6 @@
     </nav>
     <div class="row auction">
             <h4 class="m-2 heading col s4">General Livestream!</h4>
-            <a class="waves-effect waves-light btn fr" href="http://127.0.0.1:5500/livestream.html" target="_blank">Join</a>
     </div>
     <div class="row" id="app">
         <div class="col s6">
@@ -29,16 +28,16 @@
         </div>
         <div class="card col s5">
             <div class="card-title">Message
-               <span class="feedback"> <i class=" thumb_up material-icons left">thumb_up</i> 75 </span>
-               <span class="feedback"> <i class=" thumb_down material-icons left">thumb_down</i> 5 </span>
+               <!-- <span class="feedback"> <i class=" thumb_up material-icons left">thumb_up</i> 75 </span>
+               <span class="feedback"> <i class=" thumb_down material-icons left">thumb_down</i> 5 </span> -->
             </div>
             <div class="header-underline"></div>
-            <div class="card-content" >
-                <input v-model="message">
+            <div class="card-content">
+                <input v-model="message" @keyup.enter="clear">
                 <p>{{message}}</p>
             </div>
         </div>
-        <a class="waves-effect waves-light btn" id="close">Close</a>
+        <a class="waves-effect waves-light btn m-2 red" id="close" href="ngo-dashboard.html">Close</a>
     </div> 
 </body>
 <script src="scripts/AgoraRTCSDK-2.7.0.js"></script>
@@ -48,7 +47,15 @@
     var app = new Vue({
         el:'#app',
         data:{
-            message: "Ananya"
+            message: "",
+            arrmessage : []
+        },
+        methods: {
+            clear: function(){
+                console.log('fd');
+                arrmessage.push(message);
+                message="";
+            }
         }
     })
 </script>

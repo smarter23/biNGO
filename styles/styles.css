@@ -25,6 +25,11 @@ nav .nav-wrapper {
     width: 13vw;
     height: auto;   
 }
+.side-img{
+    /* position: absolute; */
+    margin-top: 20%;
+    margin-left: 28%;
+}
 .description{
     font-family: 'Lucida Sans';
     color: #121212;
@@ -114,7 +119,7 @@ nav .nav-wrapper {
     width: 3.2rem;
     height: 3px;
     margin-left: 10px;
-    background-color: var(--blue);
+    background-color: var(--yellow);
 }
 .column .card-title{
     padding: 4px;
@@ -131,4 +136,7 @@ nav .nav-wrapper {
 }
 .feedback{
     float: right;
+}
+.f5{
+    font-weight: 500;
 }
