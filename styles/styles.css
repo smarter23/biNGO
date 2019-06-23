@@ -58,6 +58,9 @@ nav .nav-wrapper {
 .join{
     margin: 10%;
 }
+.activator{
+    font-size: 94% !important;
+}
 .m-2{
     margin: 2%;
 }
@@ -140,3 +143,9 @@ nav .nav-wrapper {
 .f5{
     font-weight: 500;
 }
+@media (max-width: 600px) {
+    .column {
+      flex: 100% !important;
+      max-width: 100% !important;
+    }
+  }
