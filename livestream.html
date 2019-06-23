@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <title>biNGO</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+        <img src="assets/logo.png" class="brand-logo">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#!">FAQ</a></li>
+            <!-- <li><a href="#!">JavaScript</a></li> -->
+        </ul>
+        </div>
+    </nav>
+    <div class="row auction">
+        <h4 class="m-2 heading col s4">Live Auction Stream!</h4>
+        <a class="waves-effect waves-light btn fr" href="http://127.0.0.1:5500/livestream.html" target="_blank">Join</a>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <div id="main"></div>
+        </div>
+        <div class="col s6">
+            <h6 class="m-0 heading">Users Joined:</h6>
+            <div id="remote-container"></div>
+        </div>
+    </div>
+    
+</body>
+<script src="scripts/AgoraRTCSDK-2.7.0.js"></script>
+<script src= "scripts/scripts.js"></script> 
+</html>

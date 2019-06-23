@@ -1,0 +1,134 @@
+:root{
+    --blue: #0CA8A8;
+    --mainblue: #0CA8A8;
+    --yellow: #E2E912; 
+
+}
+*{
+    margin: 0;
+    padding:0;
+}
+nav .nav-wrapper {
+    background-color: white !important;
+}
+.nav-wrapper ul{
+    margin-right: 40px;
+}
+.nav-wrapper li a{
+    color: var(--mainblue) !important;
+    font-weight: 500;
+}
+.image{
+    margin-top: 25%;
+}
+.brand-logo{
+    width: 13vw;
+    height: auto;   
+}
+.description{
+    font-family: 'Lucida Sans';
+    color: #121212;
+    margin-left: 5%;
+}
+.btn{
+    margin: 8% 5%;
+}
+.live{
+    margin: 2%;
+}
+#about .card{
+    margin-left: 10%;
+}
+.page-footer{
+    background-color: #0CA8A8;
+}
+.heading{
+    margin: 5% 2% 2%;
+    color: #0CA8A8;
+    font-weight: 500;
+}
+.why{
+    margin:5%;
+}
+.join{
+    margin: 10%;
+}
+.m-2{
+    margin: 2%;
+}
+.m-0{
+    margin: 0;
+}
+#general{
+    position: relative;
+    width: 100% !important;
+    margin: 0 auto;
+    display: block;
+}
+#general video{
+    position: relative !important;
+    object-fit: fill !important;
+}
+#main{
+    position: relative;
+    width: 100% !important;
+    /* height: 8%; */
+    /* margin: 0 auto; */
+    display: block;
+}
+#main video{
+    position: relative !important;
+    object-fit: fill !important;
+}
+#remote-container video{
+    position: relative !important;
+    object-fit: fill !important;
+}
+#remote-container{
+    display: flex;
+}
+#remote-container>div{
+    height: 45% !important;
+    width: 45% !important;
+    margin: 0 10% 2% 0 !important;
+}
+.fr{
+    float: right;
+}
+.auction> .btn{
+    margin: 2%;
+}
+.dashboard .row {
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.dashboard .column{
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+    
+}
+.header-underline{
+    width: 3.2rem;
+    height: 3px;
+    margin-left: 10px;
+    background-color: var(--blue);
+}
+.column .card-title{
+    padding: 4px;
+    margin: 15px 10px;
+    font-weight: 500;
+}
+.thumb_up{
+    color: green;
+    margin-top: 5%;
+}
+.thumb_down{
+    color: red;
+    margin-top: 9% !important;
+}
+.feedback{
+    float: right;
+}
